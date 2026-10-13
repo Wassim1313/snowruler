@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SnowRuler – neige, randonnée et ski dans l'Atlas</title>
+<meta name="description" content="SnowRuler : hauteur de neige au jour le jour sur tout l'Atlas marocain, cartes 30 m, prévisions 7 jours, itinéraires vers les sommets, refuges et gîtes. Par Atlas Labs.">
+<meta property="og:title" content="SnowRuler – la neige de l'Atlas">
+<meta property="og:description" content="Où il y a de la neige, où randonner, où skier dans l'Atlas marocain.">
+<meta property="og:image" content="img/banner.png">
+<link rel="icon" href="img/icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3FAFC;--surface:#fff;--ice:#E3F4F7;--ink:#0B2230;--ink2:#1F4A5A;--muted:#4F7380;--accent:#077480;--cyan:#0FB5C4;--line:#0B223021}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+a{color:var(--accent)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header{display:flex;align-items:center;gap:12px;padding:18px 0}
+header img{width:44px;height:44px;border-radius:12px}
+header b{font-size:20px}header span{color:var(--muted);font-size:14px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;padding:24px 0 48px}
+h1{font-size:clamp(32px,5vw,52px);line-height:1.08;margin:0 0 16px;letter-spacing:-.02em}
+h1 em{font-style:normal;background:linear-gradient(120deg,var(--cyan),#5CE1E6);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:18px;color:var(--ink2);margin:0 0 24px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:14px;font-weight:700;text-decoration:none}
+.btn.main{background:linear-gradient(120deg,#0FB5C4,#5CE1E6 60%,#BFF6F8);color:#07111A;box-shadow:0 6px 24px #0FB5C455}
+.btn.ghost{border:1.5px solid var(--cyan);color:var(--accent);background:var(--surface)}
+.soon{font-size:13px;color:var(--muted);margin-top:10px}
+.phone{justify-self:center;width:min(300px,80vw);border-radius:36px;border:10px solid #0B2230;overflow:hidden;box-shadow:0 30px 60px #0B223033;background:#0B2230}
+.phone img{display:block;width:100%}
+section{padding:40px 0}
+h2{font-size:28px;margin:0 0 20px;letter-spacing:-.01em}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px}
+.card h3{margin:6px 0 6px;font-size:18px}.card p{margin:0;color:var(--ink2);font-size:15px}
+.ico{width:40px;height:40px;border-radius:12px;background:var(--ice);display:grid;place-items:center;font-size:20px}
+.banner{width:100%;border-radius:20px;border:1px solid var(--line);display:block}
+.lang{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--muted);font-size:14px}
+footer a{margin-right:16px}
+@media (max-width:760px){.hero{grid-template-columns:1fr}.grid,.lang{grid-template-columns:1fr}.phone{margin-top:8px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><img src="img/icon.png" alt=""><div><b>SnowRuler</b><br><span>par Atlas Labs</span></div></header>
+
+<div class="hero">
+  <div>
+    <h1>La neige de l'Atlas, <em>au jour le jour</em>.</h1>
+    <p class="lead">Où il y a de la neige, où randonner, où skier : hauteur de neige sur tout l'Atlas marocain, cartes détaillées à 30 m, prévisions sur 7 jours et itinéraires vers les sommets — Toubkal, Oukaïmeden, M'Goun, Michlifen…</p>
+    <div class="btns">
+      <a class="btn main" href="#app">📲 Bientôt sur Google Play</a>
+      <a class="btn ghost" href="#fonctions">Découvrir</a>
+    </div>
+    <p class="soon">Application gratuite · français, English, Darija</p>
+  </div>
+  <div class="phone"><img src="img/screen_point.jpg" alt="Écran SnowRuler : carte de l'Atlas et prévisions au sommet"></div>
+</div>
+
+<section id="fonctions">
+<h2>Tout pour sortir en montagne</h2>
+<div class="grid">
+  <div class="card"><div class="ico">❄️</div><h3>Neige partout</h3><p>Hauteur de neige chaque jour sur tout l'Atlas, et 30 m de détail sur les massifs, téléchargeable pour l'utiliser hors réseau.</p></div>
+  <div class="card"><div class="ico">⛅</div><h3>Prévisions 7 jours</h3><p>Chutes de neige, pluie, températures, vent et limite pluie-neige au point exact où vous allez.</p></div>
+  <div class="card"><div class="ico">🥾</div><h3>Itinéraires</h3><p>Temps de marche jusqu'au sommet selon la neige et votre rythme, étapes en refuge, niveau de prudence indicatif.</p></div>
+  <div class="card"><div class="ico">⛷️</div><h3>Ski & ski de rando</h3><p>Les spots de ski et de ski de randonnée, avec l'état de la neige du jour et des jours suivants.</p></div>
+  <div class="card"><div class="ico">🏠</div><h3>Refuges & gîtes</h3><p>Les refuges, gîtes et hébergements proches de votre sortie, et des sorties avec guide.</p></div>
+  <div class="card"><div class="ico">📏</div><h3>Partagez la neige</h3><p>Une photo de la règle plantée dans la neige ou du paysage : l'appli mesure et aide toute la communauté.</p></div>
+</div>
+</section>
+
+<section id="app">
+<img class="banner" src="img/banner.png" alt="SnowRuler – High Atlas, Morocco">
+</section>
+
+<section>
+<h2>In English · B Darija</h2>
+<div class="lang">
+  <div class="card"><h3>SnowRuler</h3><p>Daily snow depth over Morocco's Atlas, detailed 30 m snow maps, 7-day forecasts, routes to the summits with walking times, huts and guesthouses nearby. Free, coming soon on Google Play.</p></div>
+  <div class="card"><h3>SnowRuler b Darija</h3><p>Cha7 kayn tlj f l'Atlas lyoum ? Fin nmchi ndir rando wla ski ? Chouf tlj kol nhar, l'météo dyal 7 iyam, tri9 l Toubkal w l'gîtes 9rab. Fabor, 9rib f Google Play.</p></div>
+</div>
+</section>
+
+<footer>
+  <p>© 2026 Atlas Labs · SnowRuler</p>
+  <p><a href="https://script.google.com/macros/s/AKfycby6CCUd-5dnOYfr5A8R_KiOMwXeOEyyxTXM7EUSXOMoMN-lwnkBqE5mXfFG0RBqnLhj/exec?page=privacy">Politique de confidentialité</a><a href="https://script.google.com/macros/s/AKfycby6CCUd-5dnOYfr5A8R_KiOMwXeOEyyxTXM7EUSXOMoMN-lwnkBqE5mXfFG0RBqnLhj/exec?page=delete">Supprimer mon compte</a></p>
+  <p>Certains liens vers des hébergements et des sorties sont des liens partenaires : Atlas Labs peut recevoir une commission, sans frais pour vous.</p>
+</footer>
+</div>
+</body>
+</html>
